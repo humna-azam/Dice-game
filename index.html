@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Battle Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🎲 Dice Battle</h1>
+        <p>Responsive HTML, CSS, JavaScript Dice Game</p>
+
+        <div class="battle-field">
+            <div class="box">
+                <h2>You</h2>
+                <div id="userDice" class="dice-display">?</div>
+                <h3 id="userScore">0</h3>
+            </div>
+
+            <div class="box">
+                <h2>Computer</h2>
+                <div id="compDice" class="dice-display">?</div>
+                <h3 id="compScore">0</h3>
+            </div>
+        </div>
+
+        <button id="rollBtn" onclick="playGame()">Roll Dice</button>
+        
+        <h2 id="finalResult">Who Wins?</h2>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
